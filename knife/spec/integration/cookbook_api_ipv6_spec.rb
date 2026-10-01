@@ -28,7 +28,7 @@ describe "Knife cookbook API integration with IPv6", :workstation, :not_supporte
 
     let(:client_key) do
       <<~END_VALIDATION_PEM
-        <redacted>
+        <redacted-test-fixture>
       END_VALIDATION_PEM
     end
 
