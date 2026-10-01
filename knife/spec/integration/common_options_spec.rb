@@ -68,11 +68,7 @@ describe "knife common options", :workstation do
 
       context "and there is a private key" do
         before do
-          file "mykey.pem", <<~EOM
-            -----BEGIN RSA PRIVATE KEY-----
-            test-only-placeholder-key-material
-            -----END RSA PRIVATE KEY-----
-          EOM
+          file "mykey.pem", "test-only-placeholder-key-material\n"
         end
 
         it "knife raw /nodes/x should retrieve the node" do
