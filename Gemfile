@@ -83,3 +83,5 @@ if RUBY_PLATFORM.match?(/mswin|mingw|windows/)
     ENV["_BUNDLER_WINDOWS_DLLS_COPIED"] = "1"
   end
 end
+
+# Gemlock
