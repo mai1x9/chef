@@ -69,7 +69,7 @@ describe "knife common options", :workstation do
       context "and there is a private key" do
         before do
           file "mykey.pem", <<~EOM
-            test-private-key-placeholder
+            test-key-placeholder
           EOM
         end
 
