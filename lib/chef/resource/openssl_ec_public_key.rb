@@ -43,7 +43,7 @@ class Chef
 
         ```ruby
         openssl_ec_public_key '/etc/ssl_files/eckey_prime256v1_des3_2.pub' do
-          private_key_content "your_ec_private_key_content"
+          private_key_content lazy { ::File.read('/path/to/private/key.pem') }
           action :create
         end
         ```
