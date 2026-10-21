@@ -41,7 +41,7 @@ class Chef
         ```ruby
         openssl_rsa_public_key '/etc/ssl_files/rsakey_2.pub' do
           private_key_pass 'something'
-          private_key_content "<redacted private key content>"
+          private_key_content sensitive_private_key_content
           action :create
         end
         ```
